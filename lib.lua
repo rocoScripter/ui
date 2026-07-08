@@ -30,6 +30,7 @@ local ceil = math.ceil;
 local find = table.find
 local remove = table.remove
 local concat = table.concat
+local render_stepped = run.RenderStepped
 local rgbkey = ColorSequenceKeypoint.new
 local rgbseq = ColorSequence.new
 
