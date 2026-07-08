@@ -310,7 +310,7 @@ end)
 local RainbowStep = 0
 local Hue = 0
 
-local rainbowTick = LPH_NO_VIRTUALIZE(function(dt)
+local rainbowTick = function(dt)
     RainbowStep = RainbowStep + dt
 
     if RainbowStep >= (1 / 60) then
