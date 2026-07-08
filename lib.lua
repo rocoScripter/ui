@@ -14,6 +14,7 @@ local dim = UDim.new
 local rect = Rect.new
 local dim_offset = UDim2.fromOffset
 local color = Color3.new
+local lp = plrs.LocalPlayer
 local mouse = lp:GetMouse()
 local max = math.max
 local floor = math.floor
