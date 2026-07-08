@@ -1,3 +1,30 @@
+local plrs = cloneref(game:GetService("Players"))
+local uis = cloneref(game:GetService("UserInputService"))
+local run = cloneref(game:GetService("RunService"))
+local tween_service = cloneref(game:GetService("TweenService"))
+local http_service = cloneref(game:GetService('HttpService'))
+local text_service = cloneref(game:GetService("TextService"))
+local core_gui = cloneref(game:GetService("CoreGui"))
+local teams = cloneref(game:GetService("Teams"))
+local rgb = Color3.fromRGB
+local insert = table.insert
+local vec2 = Vector2.new
+local dim2 = UDim2.new
+local dim = UDim.new
+local rect = Rect.new
+local dim_offset = UDim2.fromOffset
+local color = Color3.new
+local mouse = lp:GetMouse()
+local max = math.max
+local floor = math.floor
+local min = math.min
+local random = math.random
+local clamp = math.clamp;
+local ceil = math.ceil;
+local find = table.find
+local remove = table.remove
+local concat = table.concat
+
 do
 --library init
 pcall(function()
