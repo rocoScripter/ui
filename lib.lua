@@ -265,6 +265,10 @@ function Library:UpdateKeybindFrame()
     Library.KeybindFrame.Size = dim2(0, max(xSize + 16, 170), 0, ySize + 26)
 end
 
+function connect(Signal, Callback)
+    return Library:Connect(Signal, Callback)
+end
+
 if not isfolder(Library.directory) then
     makefolder(Library.directory);
 end;
@@ -6245,3 +6249,5 @@ end
 getgenv().ThemeManager = ThemeManager
 getgenv().SaveManager = SaveManager
 end
+
+return getgenv().Library
