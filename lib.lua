@@ -326,7 +326,7 @@ local rainbowTick = function(dt)
         Library.CurrentRainbowHue = Hue;
         Library.CurrentRainbowColor = Color3.fromHSV(Hue, 0.8, 1);
     end
-end)
+end
 
 local function GetPlayersString()
     local success, PlayerList = pcall(function()
